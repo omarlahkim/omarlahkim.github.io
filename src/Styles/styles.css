@@ -1,0 +1,305 @@
+/** Bold */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 700;
+    font-display: swap;
+    src: local("SF-UI-Text-Bold.otf");
+  }
+  /** Medium */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 500;
+    font-display: swap;
+    src: local("SF-Compact-Text-Medium.otf");
+  }
+  /** Regular */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 400;
+    font-display: swap;
+    src: local("SF-Compact-Text-Regular.otf");
+  }
+  /*Logo Font*/
+  @font-face {
+    font-family: 'New York';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: 
+         local('NewYorkExtraLarge-Bold.otf')
+  }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 10;
+
+}
+.nav-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-family: 'SF Text';
+    font-weight: bold;
+}
+.nav-links li:hover{
+color:#FAFAFA;   
+}
+
+.logo{
+    font-family: "New York";
+    font-size: 30px;
+    color:#C1C1C1;
+}
+.logo:hover{
+    color:#FAFAFA; 
+
+}
+.HomeContainer{
+
+    font-family: 'SF Text';
+    margin-top: 4vh;
+    background-color: #FAFAFA;
+    height: 100%;
+    font-size: large; 
+}
+footer{
+    height: 4vh;
+    background-color: #FAFAFA;
+    background: rgba(250,250,250,0.4);
+    color: #C1C1C1;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-family: "SF Text";
+    width: 100%;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 10;
+}
+.introduction{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.introduction h1{
+    color: #222222;
+}
+.introduction h4{
+    color: #495057;
+}
+.playgroundContainer{
+    margin-top: 4vh;
+    background-color:#FAFAFA ;
+    height: 100%;
+    text-align: center;
+    padding-top:10px;
+    font-family: "SF Text";
+}
+.worksContainer{
+    margin-top: 4vh;
+    background-color:#FAFAFA ;
+    height: 100%;
+    text-align: center;
+    padding-top:10px;
+    font-family: "SF Text";
+
+}
+.aboutContainer{
+    margin-top: 4vh;
+    background-color:#FAFAFA ;
+    height: 100%;
+    text-align: center;
+    font-family: "SF Text";
+}
+.profilePic{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+.construction{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.itemsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(240,240,240,0.7);
+    padding:20px;
+}
+.aboutItem{
+    padding:20px;
+}
+.description{
+    white-space: pre-wrap;
+}
+.itemLogo{
+    max-width: 180px;
+    max-height: 70px;
+}
+.Item{
+    padding:10px;
+}
+h2{
+    color: black;
+}
+h1{
+    color: #222222;
+}
+h5{
+    color: #1d1d1f;
+}
+p{
+    font-size: 13px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    max-width: 700px;
+}
+.marvel-device {
+    zoom: 0.4;
+}
+@media screen and (max-width: 450px) {
+    .marvel-device {
+        zoom: 0.35;
+    }
+}
+@media screen and (max-width: 400px) {
+    .marvel-device {
+        zoom: 0.33;
+    }
+    
+}
+@media screen and (max-width: 374px) {
+    .marvel-device {
+        zoom: 0.30;
+    }
+}
+@media screen and (max-width: 300px) {
+    .marvel-device {
+        zoom: 0.2;
+    }
+}
+.projectsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+.project{
+    background-color: rgb(240,240,240,0.8);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding:10px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin: 10px;
+    align-items:center;
+}
+.projectText{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    margin:10px;
+    width:50%;
+}
+.aboutInfos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+.projectContainer{
+    margin-top: 5vh;
+    background-color:#FAFAFA ;
+    text-align: center;
+    font-family: "SF Text";
+}
+.notFoundContainer{
+    font-family: 'SF Text';
+    margin-top: 4vh;
+    background-color: #FAFAFA;
+    height: 100%;
+    font-size: large; 
+}
+.notFoundContainer h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider{
+    padding:5vh;
+    background-color: #131313;
+}
+.projectdesc{
+    text-align: start;
+    line-height: 25px;
+    margin-bottom: 4vh;
+}
+.centered{
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+.projectdesc p{
+    text-align: start;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(80,80,80);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 450px) {
+
+    .centered{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    
+}
+.projectconcept{
+
+
+}
+.imgslider {
+    background-color:rgb(240,240,240,0.7);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.privacyContainer{
+    text-align: center;
+    background-color: #FAFAFA;
+}

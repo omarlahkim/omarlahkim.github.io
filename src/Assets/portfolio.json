@@ -1,0 +1,56 @@
+{
+    "About":{
+        "profile_pic":"",
+        "full_name":"",
+        "phone_number":"",
+        "email":"",
+        "description":"",
+        "education":[{
+            "logo":"",
+            "name":"",
+            "title":"",
+            "period":""
+        }],
+        "internships":[{
+            "logo":"",
+            "name":"",
+            "title":"",
+            "period":""
+        }],
+        "entrepreneurship":[{
+            "logo":"",
+            "name":"",
+            "title":"",
+            "period":""
+        }],
+        "volunteerism":[{
+            "logo":"",
+            "name":"",
+            "title":"",
+            "period":""
+        }],
+        "skills":[{
+            "logo":"",
+            "name":"",
+            "title":"",
+            "period":""
+        }]
+    },
+    "Projects":[
+
+        {
+            "id":0,
+            "type":"playground",
+            "title":"Gesture It",
+            "subtitle": "Reservation de salles de reunion",
+            "description":"This project covers two specific areas of Artificial intelligence which are Machine Learning (Deep Learning) and Computer Vision, the major technology we have relied on while working on it is Artificial Neural Networks and more precisely Convolutional Neural Networks. we have developed a program that made it possible to have the computer identifies the different hand gestures that get shown to its camera and execute the correspond command that is mapped to that gesture, a simple example could be running the program and have your hand represent the number 0, 1 or the punch symbol or any other gesture and the program will know which command to execute whether increase the volume, play a Spotify song, shut down the laptop and so on and so forth.",
+            "pictures":[
+                "https://images.pexels.com/photos/4171211/pexels-photo-4171211.jpeg",
+                "https://images.pexels.com/photos/4171211/pexels-photo-4171211.jpeg",
+                "https://images.pexels.com/photos/4171211/pexels-photo-4171211.jpeg"
+            ]
+        }
+
+    ]
+    
+}
