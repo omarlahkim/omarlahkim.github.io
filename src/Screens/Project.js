@@ -1,13 +1,12 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import "../Styles/styles.css";
 
 function Project({ match }) {
   const id = match.params.id;
   const type = match.params.type;
   const IMAGE_HEIGHT_SIZE = "55vh";
-  console.log({ type, id });
+
   var projects = require("../Assets/portfolio.json");
-  console.log(projects["work"]["0"]);
 
   const project = {
     title: "Roomedia",

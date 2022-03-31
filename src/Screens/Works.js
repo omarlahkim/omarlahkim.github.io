@@ -6,9 +6,10 @@ const renderLoader = () => <p>Loading</p>;
 
 function Works({ match }) {
   return (
-    <div className="worksContainer">
+    <div className="">
       <Suspense fallback={renderLoader()}>
-        <ProjectItems match={match} title="Work" emoji="💼" />
+        <ProjectItems match={match} title="Work" type="work" emoji="💼" />
+        <div style={{ height: 2 }} />
       </Suspense>
     </div>
   );

@@ -1,38 +1,37 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy } from "react";
 import _ from "lodash";
 const ProjectItem = lazy(() => import("./project-item"));
 
 function projectItems(props) {
-  const projects = [
-    {
-      title: "Title 1",
-      subtitle: "Subtitle",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    },
-    {
-      title: "Title 1",
-      subtitle: "Subtitle",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    },
-  ];
+  var portfolio = require("../Assets/portfolio.json");
+  var projects = portfolio["Projects"];
+  var results = _.filter(projects, (project) => project.type === props.type);
+
   return (
     <div style={{ backgroundColor: "#FAFAFA" }}>
-      <h1>
+      <h1 className="text-gray-800 font-bold font-sans text-3xl text-center mt-8">
         {props.title} {props.emoji}
       </h1>
-      <div className="projectsContainer">
-        {projects.map((project) => (
-          <ProjectItem
-            id={_.snakeCase(project.title)}
-            title={project.title}
-            susbtitle={project.subtitle}
-            description={project.description}
-            match={props.match}
-            deviceContent={project.image}
-          />
-        ))}
+      <h3 className="text-gray-600 font-sans text-xl text-center ">
+        Welcome to my professional projects portfolio
+      </h3>
+      <div className="projectsContainer mt-6">
+        {results !== 0 ? (
+          results.map((project) => (
+            <ProjectItem
+              key={project.id}
+              id={project.id}
+              title={project.title}
+              subtitle={project.subtitle}
+              description={project.description}
+              match={props.match}
+              deviceContent={project.image}
+              platform={project.platform}
+            />
+          ))
+        ) : (
+          <div></div>
+        )}
       </div>
     </div>
   );

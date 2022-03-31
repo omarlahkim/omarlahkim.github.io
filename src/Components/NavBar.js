@@ -4,15 +4,20 @@ import "../Styles/styles.css";
 
 function NavBar() {
   const navStyle = {
-    color: "#C1C1C1",
+    color: "#fff",
     textDecoration: "none",
-    fontSize: 13,
+    fontSize: 16,
   };
 
   return (
     <nav>
       <NavLink activeStyle={{ color: "#fff" }} style={navStyle} to="/">
-        <h3 className="logo">OL</h3>
+        <img
+          className="h-12 w-12"
+          src="https://www.digitlift.com/wp-content/uploads/2021/11/Logo-OmarLahkim-Favicon.png"
+          href=""
+          alt=""
+        />
       </NavLink>
       <ul className="nav-links">
         <NavLink
@@ -20,13 +25,19 @@ function NavBar() {
           style={navStyle}
           to="/playground"
         >
-          <li>Playground</li>
+          <li className="font-sans font-bold p-1">Playground</li>
         </NavLink>
         <NavLink activeStyle={{ color: "#fff" }} style={navStyle} to="/work">
-          <li>Work</li>
+          <li className="font-sans font-bold p-1">Work</li>
         </NavLink>
+        {/* <NavLink activeStyle={{ color: "#fff" }} style={navStyle} to="/blog">
+          <li className="font-sans font-bold p-1">Blog</li>
+        </NavLink> */}
+        {/* <NavLink activeStyle={{ color: "#fff" }} style={navStyle} to="/Feed">
+          <li className="font-sans font-bold">Feed</li>
+        </NavLink> */}
         <NavLink activeStyle={{ color: "#fff" }} style={navStyle} to="/about">
-          <li>About</li>
+          <li className="font-sans font-bold p-1">About</li>
         </NavLink>
       </ul>
     </nav>
